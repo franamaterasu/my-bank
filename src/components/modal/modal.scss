@@ -1,0 +1,59 @@
+.modal {
+  align-items: center;
+  background: rgba(#000, .9);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  &__screen {
+    background-color: #fff;
+    border-radius: 6px;
+    max-width: 530px;
+    width: 90%;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10px 20px;
+  }
+
+  &__button {
+    border: none;
+
+    &--close {
+      background-color: transparent;
+      padding: 10px;
+      border-radius: 6px;
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        background-color: #a3a1a1;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  &__title {
+    padding: 0 50px;
+    font-family: 'Georama', sans-serif;
+    font-size: 25px;
+  }
+
+  &__body {
+    padding: 20px 50px;
+  }
+}

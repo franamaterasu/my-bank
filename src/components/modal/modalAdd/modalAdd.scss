@@ -1,0 +1,43 @@
+.modal-add__form {
+  display: flex;
+  flex-direction: column;
+
+  &-row {
+    margin-bottom: 15px;
+
+    &:last-of-type {
+      margin-bottom: 25px;;
+    }
+  }
+
+  &-label {
+    display: block;
+    font-family: 'Georama', sans-serif;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  &-input {
+    border-radius: 6px;
+    border: 1px solid #1d252d;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    width: 100%;
+  }
+
+  &-submit {
+    background-color: #7fef43;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-family: 'Georama', sans-serif;
+    font-size: 18px;
+    padding: 10px 0;
+
+    &:hover {
+      background-color: darken(#7fef43, 5%);
+      cursor: pointer;
+    }
+  }
+}

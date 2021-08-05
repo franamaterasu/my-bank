@@ -1,0 +1,49 @@
+.list-item {
+  align-items: center;
+  background-color: #fff;
+  border-left: 3px solid #7fef43;
+  border-radius: 6px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 25px 30px;
+  width: 100%;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &__info {
+    display: flex;
+  }
+
+  &__name,
+  &__amount {
+    font-family: 'Georama', sans-serif;
+    font-size: 22px;
+  }
+
+  &__amount {
+    margin-left: 20px;
+  }
+
+  &__button {
+    background-color: #5677ef;
+    border-radius: 6px;
+    border: 0;
+    color: #fff;
+    font-family: 'Georama', sans-serif;
+    font-size: 19px;
+    padding: 15px 30px;
+
+    &:hover {
+      cursor: pointer;
+      background-color: darken(#5677ef, 10%);
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

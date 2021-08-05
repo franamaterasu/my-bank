@@ -1,0 +1,74 @@
+.home {
+  background-color: #101820;
+  height: calc(100vh - 50px);
+  display: grid;
+  grid-template-areas: "list list profile";
+  padding: 50px 350px;
+  box-sizing: border-box;
+  gap: 20px;
+
+  &__list {
+    grid-area: list;
+    height: calc(100% - 50px);
+    overflow: hidden;
+  }
+
+  &__list-actions {
+    margin-bottom: 20px;
+  }
+
+  &__list-button {
+    border-radius: 6px;
+    border: 0;
+    color: #fff;
+    font-family: 'Georama', sans-serif;
+    font-size: 19px;
+    padding: 15px 30px;
+
+    &:last-of-type {
+      margin-left: 20px;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &--primary {
+      background-color: #5677ef;
+
+      &:hover {
+        background-color: darken(#5677ef, 10%);
+      }
+    }
+
+    &--danger {
+      background-color: #ff0000;
+
+      &:hover {
+        background-color: darken(#ff0000, 10%);
+      }
+    }
+  }
+
+  &__list-container {
+    max-height: 90%;
+    overflow: scroll;
+  }
+
+  &__list-message {
+    background-color: #fff;
+    border-radius: 6px;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+    padding: 10px 20px;
+  }
+
+  &__profile {
+    grid-area: profile;
+  }
+}
